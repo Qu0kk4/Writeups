@@ -8,7 +8,7 @@ Este proyecto trata sobre [descripción del proyecto].
 ## Imagen Inspiradora
 Aquí tienes una imagen que resume la esencia de mi proyecto:
 
-![Imagen Inspiradora] (Qu0kk4/HackMyVm/Captura de pantalla 2024-03-11 153825.png)
+![Imagen Inspiradora] (https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/Captura%20de%20pantalla%202024-03-11%20153825.png)
 
 ¡Espero que disfrutes explorando mi proyecto tanto como yo disfruté creándolo!
 
