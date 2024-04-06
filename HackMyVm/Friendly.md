@@ -20,9 +20,16 @@ Ahora vamos al navegador, colocamos la ip y vemos a donde nos redirige la pagina
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204450.png)
 
-Como notamos que el index del ftp coincide con la pagina, lo que podes hacer es subir una RV (ReverShell) al FTP.
+Como notamos que el index del ftp coincide con la pagina, lo que podes hacer es subir una RV (ReverShell) al FTP con el comando "PUT".
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204436.png)
+
+Seguido a eso vamos a ponernos en escucha con netcat 
+>nc -nlvp 1234
+
+Luego volvemos a la pagina web y seguido de http://"ip"/ .............. <<<<<< colocamos el nombre de la RV y le damos ENTER.
+
+![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204534.png)
 
 
 
