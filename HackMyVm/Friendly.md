@@ -16,10 +16,15 @@ Dentro del FTP encontramos un archivo llamado index.html, lo descargamos a nuest
 >ftp "IP"
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20203448.png)
-Y resulta ser el archivo index que viene por default en un servidor debian.
 Ahora vamos al navegador, colocamos la ip y vemos a donde nos redirige la pagina web.
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204450.png)
+
+Como notamos que el index del ftp coincide con la pagina, lo que podes hacer es subir una RV (ReverShell) al FTP.
+
+![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204436.png)
+
+
 
 
 
