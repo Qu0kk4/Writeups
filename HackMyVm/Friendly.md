@@ -39,13 +39,13 @@ Listo ahora somos el usuario www-data.
 Realizamos el tratamiendo de la tty para tener una shell estable.
 >script /dev/null -c bash
 >crtl Z
->stty raw -echo;fg
->+ continued  nc -nlvp 443
->                             reset
->reset: unknown terminal type unknow
->Terminal type? xterm
->export TERM=xterm
->export SHELL=bash
+stty raw -echo;fg
++ continued  nc -nlvp 443
+                             reset
+reset: unknown terminal type unknow
+Terminal type? xterm
+export TERM=xterm
+export SHELL=bash
 
 ¿Que queda ahora? Obvio buscamos la forma de escalar privilegios, para eso utilizamos el comando "sudo -l" y vemos que hay un binario llamado "vim".
 
