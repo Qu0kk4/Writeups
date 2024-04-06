@@ -1,22 +1,23 @@
 # Maquina Friendly B)
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20212326.png)
 
-Realizamos un escaneo de red con arp-scan para ver las maquinas conectadas, luego le lanzamos un ping a la maquina que vamos a comprometer, segun el ttl nos damos cuenta si estamos ante una maquina linux si es ttl 64 o si es un ttl 128 es windows.
+Hacemos un escaneo de red con arp-scan para ver las maquinas conectadas, luego le lanzamos un ping a la maquina que vamos a comprometer, segun el ttl nos damos cuenta si estamos ante una maquina linux si es ttl 64 o si es un ttl 128 es windows.
 >arp-scan -i eth0 --localnet
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/1.png)
 
-Con nmap utilizamos el siguiente el comando:
+Con nmap utilizamos el siguiente el comando para ver que puertos y servicios estan abiertos.
 >nmap -p --open -A -T5 -O "IP" -oN nombre.txt
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20203501.png)
 
-Vemos que tenemos los puertos 21 "ftp y el 80 "http", lo siguiente es ingresar al servicio ftp ya que podemos loguearnos como anonimo.
+Los puertos 21 "ftp y el 80 "http" se encuentran abiertos, lo siguiente que vamos a hacer es ingresar al servicio ftp ya que podemos loguearnos como anonimos.
 Dentro del FTP encontramos un archivo llamado index.html, lo descargamos a nuestra maquina atacante.
 >ftp "IP"
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20203448.png)
-Ahora vamos al navegador, colocamos la ip y vemos a donde nos redirige la pagina web.
+
+Vamos al navegador, colocamos la ip y esta nos redirige a un sitio web.
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204450.png)
 
@@ -31,7 +32,7 @@ Luego volvemos a la pagina web y seguido de http://"ip"/ .............. <<<<<< c
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204534.png)
 
-Listo ahora somos el usuarios www-data.
+Listo ahora somos el usuario www-data.
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204542.png)
 
@@ -46,11 +47,11 @@ Realizamos el tratamiendo de la tty para tener una shell estable.
 >export TERM=xterm
 >export SHELL=bash
 
-Buscamos la forma de escalar privilegios para eso utilizamos el comando "sudo -l" y vemos que hay un binario llamado "vim".
+¿Que queda ahora? Obvio buscamos la forma de escalar privilegios, para eso utilizamos el comando "sudo -l" y vemos que hay un binario llamado "vim".
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204702.png)
 
-Nos dirijimos a gtfobins para ver si aca podemos encontrar la forma de explotar el binario "vim". Genial! al parecer si agregamos el siguiente comando podemos acceder a root:
+Nos dirijimos a gtfobins para ver si aca podemos encontrar el binario "vim". Genial! al parecer si agregamos el siguiente comando podemos acceder a root:
 >sudo vim -c ':!/bin/sh'
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204859.png)
