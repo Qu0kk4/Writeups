@@ -7,13 +7,16 @@ Realizamos un escaneo de red con arp-scan para ver las maquinas conectadas, lueg
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/1.png)
 
 Con nmap utilizamos el siguiente el comando:
->nmap -p --open -A -T5 -O -oN nombre.txt
+>nmap -p --open -A -T5 -O "IP" -oN nombre.txt
 
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20203501.png)
 
 Vemos que tenemos los puertos 21 "ftp y el 80 "http", lo siguiente es ingresar al servicio ftp ya que podemos loguearnos como anonimo.
 ##ftp "IP"
+Dentro del FTP encontramos un archivo llamado index.html, lo descargamos a nuestra maquina atacante.
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20203448.png)
+Dentro del FTP encontramos un archivo llamado index.html, lo descargamos a nuestra maquina atacante.
+
 
 ## Imagen Inspiradora
 Aquí tienes una imagen que resume la esencia de mi proyecto:
