@@ -37,15 +37,15 @@ Listo ahora somos el usuario www-data.
 ![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20204542.png)
 
 Realizamos el tratamiendo de la tty para tener una shell estable.
->script /dev/null -c bash
->crtl Z
-stty raw -echo;fg
-+ continued  nc -nlvp 443
-                             reset
-reset: unknown terminal type unknow
-Terminal type? xterm
-export TERM=xterm
-export SHELL=bash
+1)script /dev/null -c bash
+2)crtl Z
+3)stty raw -echo;fg
+4)continued  nc -nlvp 443
+5)                          reset
+6)reset: unknown terminal type unknow
+7)Terminal type? xterm
+8)export TERM=xterm
+9)export SHELL=bash
 
 ¿Que queda ahora? Obvio buscamos la forma de escalar privilegios, para eso utilizamos el comando "sudo -l" y vemos que hay un binario llamado "vim".
 
