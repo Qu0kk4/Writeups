@@ -6,7 +6,8 @@ Realizamos un escaneo de red con arp-scan para ver las maquinas conectadas, lueg
 
 
 Con nmap utilizamos el siguiente el comando:
->nmap -sC -sV ip -oN target.txt` 
+>nmap -p --open -A -T5 -O -oN nombre.txt
+![Imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-02%20203501.png)
 
 
 ## Imagen Inspiradora
