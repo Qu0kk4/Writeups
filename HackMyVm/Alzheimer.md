@@ -14,7 +14,10 @@ Ahora con nmap hacemos un escaneo de los puertos y servicios.
 nmap -p- --open -sC -sV 192.168.0.247 -oN target.txt.
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202255.png)
 
-Como resultado de nmap esta el puerto 21 ftp, 22 ssh y el 80 http disponibles. asi que vamos a ingresar al puerto 80.
+Como resultado de nmap esta el puerto 21 ftp, 22 ssh y el 80 http disponibles. 
+
+Asi que vamos a ingresar al puerto 80.
+
 En este caso hay un texto que dice que *"medusa se olvido de donde dejo la pass, que solo recuerda que es un archivo .txt"*:
 Ya tenemos un posible usuarios: MEDUSA.
 
@@ -26,11 +29,11 @@ Ahora utilizamos la herramienta dirb para buscar directorios ocultos. Una vez qu
 
 Entramos a las rutas encontradas, en este caso el directorio secret, *medusa comenta que su contraseña esta en un archivo oculto.*
 
-![imagen]()
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202843.png)
 
 Y el directorio /home, *medusa comenta que lo paso al "home"*
 
-[imagen]
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202722.png)
 
 Que queda ahora? volvemos a hacer fuzzing esta al directorio /secret. "dirb 192.168.0.247/secret/" y encuentra un archivo llamado /home.
 *Lo estoy intentando mucho. Estoy seguro de que recuperaré mi pase.*
