@@ -2,16 +2,19 @@
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20220438.png)
 
 Realizamos un escaneo de red para ver cuantas maquinas hay conectadas a ella.
+
 -netdiscover -i eth0 -r "ip local"
+
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20200630.png)
 
-*Entonces, en resumen, el comando netdiscover -i eth0 -r 192.0.0.0 se utiliza para escanear la subred 192.0.0.0 en busca de dispositivos activos, utilizando la interfaz de red eth0 en el sistema.*
+"*Entonces, en resumen, el comando netdiscover -i eth0 -r 192.0.0.0 se utiliza para escanear la subred 192.0.0.0 en busca de dispositivos activos, utilizando la interfaz de red eth0 en el sistema".*
 
 La ip victima es la 192.168.0.247, tenemos un ttl de 64 por ende se trataria de una maquina linux
 
 Ahora con nmap hacemos un escaneo de los puertos y servicios.
 
 nmap -p- --open -sC -sV 192.168.0.247 -oN target.txt.
+
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202255.png)
 
 Como resultado de nmap esta el puerto 21 ftp, 22 ssh y el 80 http disponibles. 
