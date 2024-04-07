@@ -9,7 +9,7 @@ Realizamos un escaneo de red para ver cuantas maquinas hay conectadas a ella.
 La ip victima es la 192.168.0.247, tenemos un ttl de 64 por ende se trataria de una maquina linux
 
 Ahora con nmap hacemos un escaneo de los puertos y servicios.
-nmap -p- --open -sC -sV 192.168.0.247 -oN target.txt
+nmap -p- --open -sC -sV 192.168.0.247 -oN target.txt.
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202255.png)
 
 Como resultado de nmap esta el puerto 21 ftp, 22 ssh y el 80 http disponibles. asi que vamos a ingresar al puerto 80.
