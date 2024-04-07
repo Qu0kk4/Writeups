@@ -3,22 +3,23 @@
 
 Realizamos un escaneo de red para ver cuantas maquinas hay conectadas a ella.
 -netdiscover -i eth0 -r "ip local"
-[imagen]
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20200630.png)
+
 *Entonces, en resumen, el comando netdiscover -i eth0 -r 192.0.0.0 se utiliza para escanear la subred 192.0.0.0 en busca de dispositivos activos, utilizando la interfaz de red eth0 en el sistema.*
 La ip victima es la 192.168.0.247, tenemos un ttl de 64 por ende se trataria de una maquina linux
-[imagen]
+
 Ahora con nmap hacemos un escaneo de los puertos y servicios.
 nmap -p- --open -sC -sV 192.168.0.247 -oN target.txt
-[imagen]
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202255.png)
 
 Como resultado de nmap esta el puerto 21 ftp, 22 ssh y el 80 http disponibles. asi que vamos a ingresar al puerto 80.
 En este caso hay un texto que dice que *"medusa se olvido de donde dejo la pass, que solo recuerda que es un archivo .txt"*:
 Ya tenemos un posible usuarios: MEDUSA.
 
-[imagen]
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202344.png)
 
 Ahora utilizamos la herramienta dirb para buscar directorios ocultos. Una vez que termina de realizar el escaeno como resultado tenemos 3 directorios: /home, /admin y /secret.
-[imagen]
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202910.png)
 
 Entramos a las rutas encontradas, en este caso el directorio secret, *medusa comenta que su contraseña esta en un archivo oculto.*
 [imagen]
