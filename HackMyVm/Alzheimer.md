@@ -38,7 +38,7 @@ Y el directorio /home, *medusa comenta que lo paso al "home"*
 Que queda ahora? volvemos a hacer fuzzing al directorio /secret de la siguiente manera: "dirb 192.168.0.247/secret/", la herramienta encuentra un archivo llamado "/home" que 
 *Lo estoy intentando mucho. Estoy seguro de que recuperaré mi pase.*
 
-[imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202951.png)
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202951.png)
 
 Como ya exploramos por el completo la web, ingresamos al puerto 21-ftp ya que segun el escaneo de nmap podes ingresar de forma anonima.
 
