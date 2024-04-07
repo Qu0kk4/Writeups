@@ -27,7 +27,7 @@ Ahora utilizamos la herramienta dirb para buscar directorios ocultos. Una vez qu
 
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202910.png)
 
-Entramos a las rutas encontradas, en este caso el directorio secret, *medusa comenta que su contraseña esta en un archivo oculto.*
+Entramos a las rutas encontradas, el directorio /secret: *medusa comenta que su contraseña esta en un archivo oculto.*
 
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202843.png)
 
@@ -35,14 +35,16 @@ Y el directorio /home, *medusa comenta que lo paso al "home"*
 
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202722.png)
 
-Que queda ahora? volvemos a hacer fuzzing esta al directorio /secret. "dirb 192.168.0.247/secret/" y encuentra un archivo llamado /home.
+Que queda ahora? volvemos a hacer fuzzing al directorio /secret de la siguiente manera: "dirb 192.168.0.247/secret/", la herramienta encuentra un archivo llamado "/home" que 
 *Lo estoy intentando mucho. Estoy seguro de que recuperaré mi pase.*
 
-[imagen]
+[imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202951.png)
 
 Como ya exploramos por el completo la web, ingresamos al puerto 21-ftp ya que segun el escaneo de nmap podes ingresar de forma anonima.
+
 Dentro del ftp tenemos un archiv llamado .secretnote.txt, lo descargamos y lo leemos.
-[image]
+
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20201131.png)
 
 Aca hay que buscar info porque no entendia nada, asi que agarre chat gpt y le mande el texto a ver que me dice con el siguiente resultado:
 *El texto parece estar haciendo referencia al conceptop de "port knocking" o "golpear puertos". Es una tecnica de seguridad que c onsiste en enviar una secuencia especifica de solicitudes de conexion a un conjunto predefinido de puertos en un server, con el fin de desencantar la apertura de un puerto adcicional, conocido como "puerto oculto o puerto de servicio".
