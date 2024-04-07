@@ -46,6 +46,8 @@ Dentro del ftp tenemos un archiv llamado .secretnote.txt, lo descargamos y lo le
 
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20201131.png)
 
+![imange](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20201249.png)
+
 Aca hay que buscar info porque no entendia nada, asi que agarre chat gpt y le mande el texto a ver que me dice con el siguiente resultado:
 *El texto parece estar haciendo referencia al conceptop de "port knocking" o "golpear puertos". Es una tecnica de seguridad que c onsiste en enviar una secuencia especifica de solicitudes de conexion a un conjunto predefinido de puertos en un server, con el fin de desencantar la apertura de un puerto adcicional, conocido como "puerto oculto o puerto de servicio".
 En este caso, parece que esta indicando que si se golpean los puertos 1000, 2000 y el 3000 en el servidor en el orden correcto y la secuencia adecuada, se abrira un puerto adicional en el servidor para permitir acceso.
@@ -54,19 +56,36 @@ El port knocking es una tecnica que se utiliza a menudo para aumentar la segurid
 Bien, seguidamente vamos a utilizar el siguiente comando:
 knock $ip $puerto $puerto $puerto
 
-[imagen]
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20210424.png)
 
 Una vez hecho el knocking, y encontrado una posible contraseña en el archivo .txt del ftp, ingreamos como el usuario medusa al ssh.
-[imagen]
+
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20210645.png)
 
 Listo somos usuario medusa, aca queda escalar privilegios, para ellos hacemos un "sudo -l" como resultado:
-[imagen]
+
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20210703.png)
 
 Abrimos un servidor python en nuestra maquina atacante y nos enviamos el linpeas.sh a la maquina victima.
-Una vez recibido el archivo le damos permiso de ejecucion "chmod +x linpeas" y lo ejecutamos.
-[imagen]
+
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20214416.png)
+
+Le damos permisos de ejecucion al script, y lo ejecutamos.
+
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20214518.png)
+
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20214529.png)
 
 Como respuesta del linpeas tenemos un binario llamado "capsh". Buscamos en gtfobins y vemos que si podemos elevar privilegios.
-Ejecutamos el comando y listo.
+
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20220029.png)
+
+Ejecutamos el comando y listo, somos usuarios root.
+
+![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20220212.png)
+
+
+
+
 
 
