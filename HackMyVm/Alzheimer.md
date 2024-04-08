@@ -3,7 +3,7 @@
 
 Realizamos un escaneo de red para ver cuantas maquinas hay conectadas a ella.
 
--netdiscover -i eth0 -r "ip local"
+>-netdiscover -i eth0 -r "ip local"
 
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20200630.png)
 
@@ -13,7 +13,7 @@ La ip victima es la 192.168.0.247, tenemos un ttl de 64 por ende se trataria de 
 
 Ahora con nmap hacemos un escaneo de los puertos y servicios.
 
-nmap -p- --open -sC -sV 192.168.0.247 -oN target.txt.
+>nmap -p- --open -sC -sV 192.168.0.247 -oN target.txt.
 
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20202255.png)
 
@@ -57,7 +57,7 @@ En este caso, parece que esta indicando que si se golpean los puertos 1000, 2000
 El port knocking es una tecnica que se utiliza a menudo para aumentar la seguridad de un servidor al ocultar los servicios o puertos abiertos, y solo permitir aceso a cuando se recibe una secuencua especifica de solicitudes de conexion. Esto puede dificultar a los atacantes descubrir y aprovechar los servicios expuestos en el server.*
 
 Bien, seguidamente vamos a utilizar el siguiente comando:
-knock $ip $puerto $puerto $puerto
+>knock $ip $puerto $puerto $puerto
 
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20210424.png)
 
