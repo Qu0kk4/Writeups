@@ -52,7 +52,7 @@ Ahora realizamos lo siguiente:
 
 Vamos a la URL de la pagina y colocamos nuestra ip + la revershell pentest monkey (http://$IP/revershell)(sin la extension).
 
-Bien si todo salio excelente somos el usuarios www-data, ahora realizamos el tratamiento de la tty:
+Bien si todo salio excelente somos el usuario www-data, ahora realizamos el tratamiento de la tty:
 
 ```console
 $ script /dev/null -c bash
