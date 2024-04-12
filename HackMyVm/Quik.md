@@ -1,6 +1,6 @@
 ## MAQUINA QUICK
 
-Usamos la netdiscover para ver las maquinas conectadas en nuestra red
+Usamos la herramienta "netdiscover" para ver las maquinas conectadas en nuestra red
 
 ```console
 
