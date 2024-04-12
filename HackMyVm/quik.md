@@ -2,10 +2,11 @@
 
 Usamos la netdiscover para ver las maquinas conectadas en nuestra red
 
-console
 >netdicover -i eth0 -r 192.x.x.x/24
 
 Una vez que tengamos la ip, con nmap vamos a enumerar los puertos y servicios de la misma.
+
+```console
 
 >nmap -p- -open -sV -sC "ip" -oN TARGET
 
@@ -17,6 +18,7 @@ Apache httpd 2.4.41 ((Ubuntu))
 l_http-server-header: Apache/2.4.41 (Ubuntu)
 l_http-title: Quick Automative
 MAC Address: 08:00:27:41:D3:56 (Oracle VirtualBox virtual NIC)"
+```
 
 Como tenemos el puerto 80 disponbile ingresamos a la pagina web.
 
