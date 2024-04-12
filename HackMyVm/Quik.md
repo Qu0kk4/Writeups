@@ -59,7 +59,7 @@ $ script /dev/null -c bash
 Script started, file is /dev/null
 
 www-data@host:/$ ^Z
-zsh: suspended  nc -nlvp 443
+zsh: suspended  nc -nlvp 1234
 
 ~$> stty raw -echo; fg
 
