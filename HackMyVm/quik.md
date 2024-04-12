@@ -8,7 +8,7 @@ Usamos la netdiscover para ver las maquinas conectadas en nuestra red
 
 ```
 
-Una vez que tengamos la ip, con nmap vamos a enumerar los puertos y servicios de la misma.
+Una vez que tengamos la ip, con nmap vamos a enumerar los puertos y servicios abiertos de la misma.
 
 ```console
 
@@ -24,7 +24,7 @@ l_http-title: Quick Automative
 MAC Address: 08:00:27:41:D3:56 (Oracle VirtualBox virtual NIC)"
 ```
 
-Como tenemos el puerto 80 disponbile ingresamos a la pagina web.
+Como tenemos el puerto 80 disponible ingresamos a la pagina web.
 
 Usamos nikto para ver si hay alguna vulnerabilidad en la web.
 
@@ -35,7 +35,7 @@ Usamos nikto para ver si hay alguna vulnerabilidad en la web.
 /index.php?page=http://blog.cirt.net/rfiinc.txt ?: Remote File Inclusion (RFI)
 ```
 
-Tenemos una posible vuln. en la web, se trata de un RFI (remote-file-inclusion)
+Tenemos una posible vuln. en la web, se trata de un RFI (remote-file-inclusion).
 
 Aca lo que vamos a hacer es subir una RV (revershell.php) de pentestmokey a la maquina victima creando un servidor python.
 
