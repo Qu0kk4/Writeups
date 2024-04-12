@@ -2,7 +2,11 @@
 
 Usamos la netdiscover para ver las maquinas conectadas en nuestra red
 
+```console
+
 >netdicover -i eth0 -r 192.x.x.x/24
+
+```
 
 Una vez que tengamos la ip, con nmap vamos a enumerar los puertos y servicios de la misma.
 
@@ -24,8 +28,11 @@ Como tenemos el puerto 80 disponbile ingresamos a la pagina web.
 
 Usamos nikto para ver si hay alguna vulnerabilidad en la web.
 
+```console
+
 >nikto -h "ip"
 
 /index.php?page=http://blog.cirt.net/rfiinc.txt ?: Remote File Inclusion (RFI)
+```
 
 Tenemos una posible vuln. en la web, se trata de un RFI.
