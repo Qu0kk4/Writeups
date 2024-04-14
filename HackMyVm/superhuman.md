@@ -56,8 +56,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 La pagina nos arroja un entorno todo en blanco, el cual no nos sirve de nada, asi que vamos a realizar un escaneo de directorios ocultos con gobuster.
 
-![](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20224922.png)
-
 ![](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20212930.png)
 
 ```console
@@ -68,7 +66,10 @@ Starting gobuster in directory enumeration mode
 /server-status        (Status: 403) [Size: 277]
 /notes-tips.txt       (Status: 200) [Size: 358]
 ```
-CONSEJO: "Prueben ese directorio y mandenle full a los hilos porque tarda"
+
+![](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20224922.png)
+
+CONSEJO: "Prueben esa wordlists y mandenle full a los hilos porque tarda"
 
 ![](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20223932.png)
 
