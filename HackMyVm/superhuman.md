@@ -154,7 +154,7 @@ Con metasploit vamos a ingresar las opciones para ver si conseguimos dar con la 
 
 ![](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20231410.png)
 
-Y BIEN! obtivimos la password, aclaro que tambien se puede hacer son "hydra" a la fuerza bruta.
+Y BIEN! obtuvimos la password, aclaro que tambien se puede hacer con "hydra" a la fuerza bruta.
 
 Ingresamos con las credenciales y somos el usuario fred.
 
