@@ -1,12 +1,12 @@
 ## MAQUINA QUICK 2
 
-![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20201205.png)
+![imagen]
 
 Comenzamos haciendo un escaneo de puertos con nmap.
 
 > nmap -p- --open -sS -sC -sV --min-rate 4000 "IP" -oN target.txt
 
-![imagen]
+![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20201205.png)
 
 Encontramos el puerto 22 ssh y el 80 http abiertos.
 Ingresamos al puerto servidor web (port 80) ya que no poseemos ninguna credencial para loguearnos en el ssh
