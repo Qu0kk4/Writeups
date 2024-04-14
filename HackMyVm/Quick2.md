@@ -47,7 +47,7 @@ Una vez generada la cadena, lo enviamos al burpsuite >> repeater >> y luego del 
 
 ![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20201344.png)
 
-Si todo esta bien como resultados muestra que el id es igual a www-data.
+Si todo esta bien como resultado muestra que el id es igual a www-data.
 
 Con esto leemos el archivo FILE.php que nos quedo pendiente.
 
