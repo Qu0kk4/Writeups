@@ -103,7 +103,7 @@ Vamos a ver si existe, coloquemos las posibilidades en el navegador.
 
 ![](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20225700.png)
 
-Se nos descargo un archivo, con john the ripper vamos a tratar de creakear la pass del archivo.
+Se nos descargo un archivo, con john the ripper vamos a tratar de crackear la pass del archivo.
 
 ```console
 zip2john salome_and_me.zip > hash-zip
