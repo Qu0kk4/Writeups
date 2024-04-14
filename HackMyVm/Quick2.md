@@ -1,5 +1,7 @@
 ## MAQUINA QUICK 2
 
+![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-13%20201205.png)
+
 Comenzamos haciendo un escaneo de puertos con nmap.
 
 > nmap -p- --open -sS -sC -sV --min-rate 4000 "IP" -oN target.txt
