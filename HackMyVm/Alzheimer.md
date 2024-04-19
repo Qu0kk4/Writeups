@@ -1,4 +1,4 @@
-# Maquian Alzhimer
+# Maquian Alzheimer
 ![imagen](https://github.com/Qu0kk4/Qu0kk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20220438.png)
 
 Realizamos un escaneo de red para ver cuantas maquinas hay conectadas a ella.
