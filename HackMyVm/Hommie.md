@@ -106,9 +106,9 @@ Y tenemos la siguiente ruta:
 
 ![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Screenshot%202024-03-18%20201109.png)
 
-Con el comando "strings" leemos el archivo para ver que es lo que hace
-Y se ve que lee el comando "$HOME/.ssh/id_rsa"
-Lo que hace se hace es un  PATHHIJACKING para cambiar la ruta en que lee el archivo configurandolo a root:
+Con el comando "strings" leemos el archivo para ver que es lo que hace,
+se ve que lee el comando "$HOME/.ssh/id_rsa"
+Lo que hacemos es un  PATHHIJACKING para cambiar la ruta en que lee el archivo configurandolo a root:
 
 ![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Screenshot%202024-03-18%20201121.png)
 
