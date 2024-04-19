@@ -6,8 +6,6 @@ Para cada línea leída del archivo de entrada, el script toma esa línea y la c
 El resultado de cada conversión se agrega al archivo especificado como argumento de salida ($2) utilizando el operador de redirección >>, que agrega contenido al final del archivo sin borrar el contenido existente. Cada línea convertida se agrega como una nueva línea en el archivo de salida.
 
 
-
-
 #!/bin/bash
 
 for i in $(cat $1); do
