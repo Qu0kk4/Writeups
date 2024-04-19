@@ -28,7 +28,7 @@ nmap --open -sC -sV -oN fullscan.txt
 
 Tenemos como resultado el puerto 21 ftp, el puerto 22 ssh y el puerto 80 http.
 
-Ingresamos al servidor web, con whatweb vemos mas info. sobre la pagina y luego tenemos una frase dirijida a "alexia" y dice que su "id_rsa esta expuesta"
+Ingresamos al servidor web, con whatweb vemos mas info. sobre la pagina y luego tenemos una frase dirigida a "alexia" y dice que su "id_rsa esta expuesta"
 
 ![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Screenshot%202024-03-18%20185533.png)
 
