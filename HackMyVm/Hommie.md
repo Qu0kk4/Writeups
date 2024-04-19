@@ -47,13 +47,14 @@ Haciendo un ls -la dentro del ftp tenemos un directorio llamado ".web"
 #atención!
 
 En el directorio normal no podemos subir nada, en el directorio .web si! osea que vamos a tratar de subir una revershell para conectarnos a la maquina victima.
-Esto nos da resultado negativo y ya no tenemos ni idea de como seguir.. por eso se me dio x buscar en chatgpt si existe "otros servicio de tranferencia similares al ftp", y tenemos este resultado:
 
 ![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Screenshot%202024-03-18%20194249.png)
 
-Claro ! existe el protocolo tftp, este servicio corre en el puerto 69 y se envian los archivos atravez de UDP. 
+Esto nos da resultado negativo y ya no tenemos ni idea de como seguir.. por eso se me dio x buscar en chatgpt si existe "otros servicio de tranferencia similares al ftp", y tenemos este resultado
 
 ![imagen](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-19%20193121.png)
+
+Claro ! existe el protocolo tftp, este servicio corre en el puerto 69 y se envian los archivos atravez de UDP. 
 
 Ahora hacemos volvemos a escanear otra vez los puertos con nmap.
 
