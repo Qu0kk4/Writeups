@@ -42,11 +42,11 @@ Dentro de las carpetas de carlota encontramos un imagen.jpg, la cual con python 
 ```bash
 Maquina Victima:
 
---> python3 -m http.server
+--> python3 -m http.server 8080
 
 Maquina Atacante:
 
----> wget http://172.17.0.2/imagen.jpg
+---> wget http://172.17.0.2:8080/imagen.jpg
 ```
 ![img](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Screenshot%202024-05-01%20220613.png)
 
