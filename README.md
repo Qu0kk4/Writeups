@@ -5,6 +5,7 @@
 📫 Puedes encontrarme en:  
 
 tryhackme.com: Quokkaa 
-<img src="https://tryhackme-badges.s3.amazonaws.com/Quokkaa.png" alt="TryHackMe">
+
+<script src="https://tryhackme.com/badge/1951178"></script>
 
 https://hackmyvm.eu/public/?u=quokka
