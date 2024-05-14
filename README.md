@@ -6,6 +6,6 @@
 
 tryhackme.com: Quokkaa 
 
-![img]<script src="https://tryhackme.com/badge/1951178"></script>
+![img](<script src="https://tryhackme.com/badge/1951178"></script>)
 
 https://hackmyvm.eu/public/?u=quokka
