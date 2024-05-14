@@ -4,8 +4,6 @@
 💞️ Estoy buscando colaborar en lo que pueda, ya sea en CTF, comunidades y todo lo relacionado con la ciberseguridad.
 📫 Puedes encontrarme en:  
 
-tryhackme.com: Quokkaa 
-
-![img](<script src="https://tryhackme.com/badge/1951178"></script>)
+tryhackme.com: Quokkaa <script src="https://tryhackme.com/badge/1951178"></script>
 
 https://hackmyvm.eu/public/?u=quokka
