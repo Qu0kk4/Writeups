@@ -64,7 +64,8 @@ bandit13:	````scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private```
 
 		ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p2220
 
-# una vez dentro de la maquina bandit14 vamos a la ruta y leemos el archivo "/etc/bandit_pass/bandit14"
-bandit14:telnet localhost 30000 # colocamos la contraseña de bandit y nos devuelve imprime la contraseña requerida. #jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+(una vez dentro de la maquina bandit14 vamos a la ruta y leemos el archivo "/etc/bandit_pass/bandit14")
+
+bandit14:	````telnet localhost 30000```` (colocamos la contraseña de bandit y nos devuelve imprime la contraseña requerida). #jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 
 bandit15:
