@@ -6,10 +6,10 @@ bandit2:	````cat space\ in \this \filename````
 		````cat "spaces in this filename"````
 		````cat /home/bandit2/*```` | varias opciones
 
-bandit3:	````cat inhere/ .hidden
-		find . -name .hidden  "ve el contenido de la carpeta .hidden"
-		find . "muestra el contenido de la carpeta"
-		find . -name .hidden | xargs  cat ````
+bandit3:	````cat inhere/ .hidden````
+		````find . -name .hidden````  (ve el contenido de la carpeta .hidden)
+		````find . ````(muestra el contenido de la carpeta)
+		````find . -name .hidden | xargs  cat ````
 
 bandit4:	````find . -name -file*  "el * muestra todo el contenido del archivo file."
 		file inhere/*  "* muestra el contenido de la carpeta inhere"
