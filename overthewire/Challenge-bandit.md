@@ -1,4 +1,4 @@
-#Challenge Bandit :D
+# Challenge Bandit :D
 
 ###bandit0:	cat file.txt
 
