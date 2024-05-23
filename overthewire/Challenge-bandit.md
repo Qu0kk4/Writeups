@@ -1,6 +1,6 @@
 # Challenge Bandit :D
 
-### bandit0:	````consolecat file.txt````
+### bandit0:	````cat file.txt````
 
 ###bandit2:	cat space\ in \this \filename 
 		cat "spaces in this filename"
