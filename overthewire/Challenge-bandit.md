@@ -4,7 +4,7 @@ bandit0:	````cat file.txt````
 
 bandit2:	````cat space\ in \this \filename```` 
 		````cat "spaces in this filename"````
-		````cat /home/bandit2/*````
+		````cat /home/bandit2/*```` | varias opciones
 
 bandit3:	````cat inhere/ .hidden
 		find . -name .hidden  "ve el contenido de la carpeta .hidden"
