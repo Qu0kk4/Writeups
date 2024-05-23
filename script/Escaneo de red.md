@@ -1,6 +1,6 @@
-# Script basico de redes internas para CTF u otros casos.
+## Script basico de redes internas para CTF u otros casos.
 
-# Para su uso, en caso de que tenga otro rango de IP modifiquen el script antes de lanzarlo.
+## Para su uso, en caso de que tenga otro rango de IP modifiquen el script antes de lanzarlo.
 
 ````bash
 #!/bin/bash
