@@ -16,3 +16,8 @@ arp-scan -I eth0 --localnet
 
 - `arp-scan -I eth0 --localnet`: Este comando ejecuta un escaneo ARP en la interfaz de red especificada (`eth0`) para descubrir hosts en la red local. La opción `--localnet` indica que se escaneará la red local donde está conectada la interfaz especificada.
 ````
+
+![](https://github.com/Qu0kk4/Quokk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-26%20175014.png)
+
+
+![](https://github.com/Qu0kk4/Quokk4/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-03-26%20175040.png)
