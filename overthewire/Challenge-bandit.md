@@ -1,24 +1,24 @@
-# Challenge Bandit :D
+#Challenge Bandit :D
 
-bandit0:cat file.txt
+###bandit0:	cat file.txt
 
-bandit2:cat space\ in \this \filename 
-			cat "spaces in this filename"
-			cat /home/bandit2/*
+###bandit2:	cat space\ in \this \filename 
+		cat "spaces in this filename"
+		cat /home/bandit2/*
 
-bandit3:cat inhere/ .hidden
-		find . -name .hidden # ve el contenido de la carpeta .hidden
-		find . # muestra el contenido de la carpeta
+###bandit3:	cat inhere/ .hidden
+		find . -name .hidden  "ve el contenido de la carpeta .hidden"
+		find . "muestra el contenido de la carpeta"
 		find . -name .hidden | xargs  cat 
 
-bandit4:find . -name -file* # el * muestra todo el contenido del archivo file.
-		file inhere/* # * muestra el contenido de la carpeta inhere
-		find . -name -file007 | xargs cat # con xargs cat decimos que nos imprima el contenido del archivo file007
+###bandit4:	find . -name -file*  "el * muestra todo el contenido del archivo file."
+		file inhere/*  "* muestra el contenido de la carpeta inhere"
+		find . -name -file007 | xargs cat "con xargs cat decimos que nos imprima el contenido del archivo file007"
 
-bandit5:find . -type f -readable ! -executable -size 1033c | cat
-			find . -type f -readable ! -executable -size 1033c | xargs cat # El sufijo `c` indica que el tamaño está en bytes.
+###bandit5:	find . -type f -readable ! -executable -size 1033c | cat
+			find . -type f -readable ! -executable -size 1033c | xargs cat "El sufijo `c` indica que el tamaño está en bytes".
 
-bandit6:find / -user bandit7 -group bandit6 -size 33c 2>/dewv/null
+###bandit6:	find / -user bandit7 -group bandit6 -size 33c 2>/dewv/null
 		find / -user bandit7 -group bandit6 -size 33c 2>/dewv/null | xargs cat
 
 bandit7:cat data.txt | wc -l # wc -l lista la cantidad de palabras que hay
