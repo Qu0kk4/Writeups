@@ -1,4 +1,4 @@
-##MAQUINA TALK
+## MAQUINA TALK
 
 ![img](https://github.com/Qu0kk4/Quokka/blob/main/HackMyVm/image/Captura%20de%20pantalla%202024-04-11%20201954.png)
 
