@@ -10,18 +10,18 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-# Verificar si el archivo existe
+# Verifica si el archivo existe
 if [ ! -f "$1" ]; then
   echo "El archivo $1 no existe."
   exit 1
 fi
 
-# Procesar el archivo, extraer solo los números al principio de cada línea y eliminar letras
+# Procesa el archivo.txt, extrae solo los números al principio de cada línea y elimina las letras
 result=$(grep -oE '^[0-9]+' "$1" | tr '\n' ',')
 
-# Eliminar la última coma
+# Elimina la última coma
 result=${result%,}
 
-# Mostrar el resultado
+# Imprima el resultado
 echo "$result"
 ````
