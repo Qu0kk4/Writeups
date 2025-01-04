@@ -1,4 +1,4 @@
-👋 ¡Hola, soy Cesar aka. Quokka (si, quokka, el animalito mas feliz del mundo) !
+👋 ¡Hola, 1gn0Tus los saluda!
 
 👀 Me defino como una persona en la que entro a este mundo de la ciberseguridad sin saber
 que es una VM y ahora no piensa irse.
@@ -13,6 +13,6 @@ que es una VM y ahora no piensa irse.
 
 - https://hackmyvm.eu/public/?u=quokka
 
-- HacktheBox: Quokka
+- HacktheBox: 1gn0Tus
 
 - https://github.com/Qu0kk4/Quokk4
